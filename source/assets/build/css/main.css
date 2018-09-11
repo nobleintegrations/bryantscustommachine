@@ -657,6 +657,19 @@ table {
   }
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.hero {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 145, 34, .2)), to(rgba(17, 145, 34, .2))), url("../../images/hero.jpg");
+  background: linear-gradient(rgba(17, 145, 34, .2), rgba(17, 145, 34, .2)), url("../../images/hero.jpg");
+  height: 400px;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
