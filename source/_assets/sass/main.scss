@@ -14,5 +14,8 @@ body {
         ),
         url('../../images/hero.jpg');
     height: 400px;
+    @media only screen and (max-width: 767px) {
+        height: 250px;
+    }
 }
 @tailwind utilities;

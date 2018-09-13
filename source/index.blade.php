@@ -1,24 +1,22 @@
 @extends('_layouts.master')
 
 @section('body')
-    <div class="w-4/5 lg:w-2/3 bg-white mx-auto container">
-        <header class="container mx-auto">
-            <nav class="flex items-center justify-between flex-wrap bg-white p-6">
-                <div class="logo text-center"><a href="#" class=""><img class="w-64" src="/assets/images/logo.png"></a></div>
-                <div class="flex items-center flex-no-shrink text-black mr-6">
-                    <div class="w-full content-center block flex-grow flex items-center lg:w-auto">
-                        <div class="text-l flex-grow">
-                            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black">Home</a>
-                            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black">Services</a>
-                            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black">About</a>
-                            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black">Contact</a>
-                        </div>
-                    </div>
+    <div class="lg:w-4/5 w-full bg-white mx-auto container">
+        <header id="home" class="bg-white lg:pb-10 lg:pt-32 text-center">
+            <div class="logo text-center lg:-m-20 block"><a href="#"><img style="width:19rem;" src="/assets/images/logo.png"></a></div>
+            <div class="flex lg:px-4 pb-4 text-center justify-center">
+                <div class="nav-left flex flex-row lg:justify-start xl:ml-4 lg:px-4 md:text-xl no-underline font-medium tracking-wide lg:flex-1">
+                    <a href="#home" class="text-black no-underline px-4 lg:p-4 py-2 hover:bg-green-dark hover:text-white rounded hover:border-green-dark">Home</a>
+                    <a href="#services" class="text-black no-underline px-4 py-2 lg:ml-4 xl:ml-12 lg:p-4 hover:bg-green-dark hover:text-white rounded hover:border-green-dark">Services</a>
                 </div>
-            </nav>
+                <div class="nav-right flex flex-row lg:text-right xl:mr-4 lg:justify-end md:text-xl no-underline font-medium tracking-wide lg:flex-1">
+                    <a href="#about" class="text-black no-underline px-4 lg:p-4 lg:mr-4 xl:mr-12 py-2 hover:bg-green-dark hover:text-white rounded hover:border-green-dark">About</a>
+                    <a href="#contact" class="text-black no-underline px-4 lg:p-4 py-2 hover:bg-green-dark hover:text-white rounded hover:border-green-dark">Contact</a>
+                </div>
+            </div>
         </header>
         <div class="hero text-center flex flex-col justify-center">
-            <div class="text-2xl md:text-3xl text-white font-light uppercase mb-4">
+            <div class="text-xl md:text-3xl text-white font-light uppercase mb-4">
                 Innovative | Precise | Efficient
             </div>
             <div class="">
@@ -26,13 +24,13 @@
             </div>
             
         </div>
-        <div class="bg-white container p-8 flex md:flex-row sm:flex-col justify-between">
-            <div class="md:w-1/3 bg-grey-light p-8 mr-4 sm:mb-4">
-                <h3 class="text-right pb-4 font-light uppercase tracking-wide">Our Ser<span class="border-b-2 border-green-dark">vices</span></h3>
+        <div id="services" class="bg-white container px-8 pt-8 flex md:flex-row flex-col justify-between">
+            <div class="md:w-1/3 bg-grey-light p-8 md:mr-4 mb-4">
+                <h3 class="text-right pb-4 font-light uppercase tracking-wide"><span class="font-bold">Our</span> Ser<span class="border-b-2 border-green-dark">vices</span></h3>
                 <p class="text-right leading-loose text-sm text-grey-darkest">We provide a wide variety of services in the water well and oil field industry. We can custom make any part for your shop
                 and help fill in any manufacturing gaps. More info about services will go here once I have the information.</p>
             </div>
-            <div class="md:w-1/3 max-w-sm overflow-hidden mr-4 sm:mb-4">
+            <div class="md:w-1/3 overflow-hidden md:mr-4 mb-4">
                 <img class="w-full" src="/assets/images/services-card1.jpg">
                 <div class="py-4">
                     <div class="font-bold text-l mb-2 text-green-dark uppercase">Threaded Pipe</div>
@@ -40,23 +38,23 @@
                     priority. We guarantee our products.</p>
                 </div>
             </div>
-            <div class="md:w-1/3 max-w-sm overflow-hidden sm:mb-4">
+            <div class="md:w-1/3 overflow-hidden mb-2">
                 <img class="w-full" src="/assets/images/services-card2.jpg">
                 <div class="py-4">
-                    <div class="font-bold text-l mb-2 text-green-dark uppercase">Custom Machining</div>
+                    <div class="font-bold text-l text-green-dark uppercase">Custom Machining</div>
                     <p class="text-sm text-grey-darker leading-normal">Our shop can make any part you need for your operation. We specialize in creating those hard to find parts needed in the
                     water well and oil field industries.</p>
                 </div>
             </div>
         </div>
-        <div class="bg-grey-lighter w-full h-full p-8 flex justify-between md:flex-row container sm:flex-col">
-            <div class="md:w-1/2 bg-cover w-full sm:h-64 md:h-auto flex-grow text-center p-8 mr-8 sm:mb-4 md:mb-0" style="background-image: url('/assets/images/aboutus.jpg')"></div>
+        <div class="bg-grey-lighter w-full h-full p-8 flex justify-between md:flex-row container flex-col">
+            <div class="md:w-1/2 bg-cover w-full h-64 md:h-auto flex-grow text-center p-8 mr-8 mb-4 md:mb-0" style="background-image: url('/assets/images/aboutus.jpg')"></div>
             <div class="md:w-1/2 bg-grey-light flex-1 p-8">
-                <h3 class="text-left pb-4 font-light uppercase tracking-wide"><span class="border-b-2 border-green-dark">Abou</span>t Us</h3>
+                <h3 class="text-left pb-4 font-light uppercase tracking-wide"><span class="font-bold border-b-2 border-green-dark">About</span> Us</h3>
                 <p class="text-left leading-loose text-grey-darkest text-sm">
                     Established in 2018, Bryants Custom Machine is located in Littlefield, TX. Although it’s a new bsuiness, Willie and Chase
                     have over 40 years of expereince in the water well industry. They’ve decided to take their talets and start out on a new
-                    endeavor as a family owned and operatee business.
+                    endeavor as a family owned and operated business.
                 </p>
             </div>
         </div>
@@ -110,9 +108,9 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-grey-dark py-4 container text-grey-lighter px-4 flex justify-between font-light">
-                <div class="sm:text-xs md:text-base">Copyright &copy; Bryants Custom Machine</div>
-                <div class="sm:text-xs md:text-base">Powered by Noble Integrations LLC</div>
+            <div class="bg-grey-dark py-4 container text-grey-lighter px-4 flex flex-col md:flex-row text-center justify-between font-light">
+                <div class="text-sm mb-4 md:mb-0 md:text-base">Copyright All Rights Reserved &copy; 2018</div>
+                <div class="text-xs md:text-base text-grey-light md:text-grey-lighter">Powered by Noble Integrations LLC</div>
             </div>
         </footer>
     </div>
