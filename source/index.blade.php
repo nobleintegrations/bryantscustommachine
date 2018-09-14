@@ -86,20 +86,20 @@
                 <div class="flex flex-col w-full pb-4 md:flex-1 md:pr-4 md:w-4/5">
                     <div class="uppercase text-l font-semibold py-4 tracking-wide">Connect</div>
                     <div class="">
-                        <form class="flex flex-col md:flex-row">
+                        <form name="contact" class="flex flex-col md:flex-row" method="POST" netlify>
                             <div class="md:w-1/3 md:flex-1 md:mr-2">
                                 <input class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight mb-2 focus:outline-none focus:bg-white focus:border-green-dark"
-                                    id="inline-full-name" type="text" value="Full Name">
+                                    id="inline-full-name" name="name" type="text" value="Full Name">
                                 <input class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none mb-2 focus:bg-white focus:border-green-dark"
-                                    id="inline-full-name" type="text" value="Email">
+                                    id="inline-full-name" name="email" type="text" value="Email">
                                 <input class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight mb-2 focus:outline-none focus:bg-white focus:border-green-dark"
-                                    id="inline-full-name" type="text" value="Phone">
+                                    id="inline-full-name" name="phone" type="text" value="Phone">
                             </div>
                             <div class="md:w-2/3 md:flex-1">
                                 <textarea class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none
-                                focus:bg-white focus:border-green-dark sm:mb-2 md:mb-1" rows="4">Message</textarea>
+                                focus:bg-white focus:border-green-dark sm:mb-2 md:mb-1" name="message" rows="4">Message</textarea>
                                 <button class="shadow bg-green-dark text-white font-bold py-2 px-4 rounded w-full hover:bg-green-light focus:shadow-outline focus:outline-none"
-                                    type="button">
+                                    type="submit">
                                     Send
                                 </button>
                             </div>
