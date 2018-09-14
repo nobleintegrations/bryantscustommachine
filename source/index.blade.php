@@ -1,8 +1,8 @@
 @extends('_layouts.master')
 
 @section('body')
-    <div class="lg:w-4/5 w-full bg-white mx-auto container">
-        <header id="home" class="bg-white text-center lg:pb-10 lg:pt-32">
+    <div id="home" class="lg:w-4/5 w-full bg-white mx-auto container">
+        <header class="bg-white text-center sticky pin-t border-b-2 border-grey-light lg:pb-10 lg:pt-32">
             <div class="logo text-center lg:-m-20 block"><a href="#"><img style="width:19rem;" src="/assets/images/logo.png"></a></div>
             <div class="flex pb-4 text-center justify-center lg:px-4">
                 <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:justify-start lg:px-4 xl:ml-4">
@@ -63,15 +63,15 @@
         <div class="bg-white text-center">
             <div class="text-2xl uppercase font-light p-8"><span class="font-bold">Our</span> <span class="border-b-2 border-green-dark">Loc</span>ation</div>
             <div class="w-full">
-                {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.7210128682455!2d-102.33059644899906!3d33.922579231903924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x870209999cec9961%3A0x204f1f5291c0dd1e!2s705+E+4th+St%2C+Littlefield%2C+TX+79339!5e0!3m2!1sen!2sus!4v1536605261178" --}}
-                    {{-- width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> --}}
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.7210128682455!2d-102.33059644899906!3d33.922579231903924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x870209999cec9961%3A0x204f1f5291c0dd1e!2s705+E+4th+St%2C+Littlefield%2C+TX+79339!5e0!3m2!1sen!2sus!4v1536605261178"
+                    width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
         <footer id="contact">
             <div class="flex flex-col bg-black text-white container p-4 md:flex-row">
                 <div class="flex flex-col w-full font-light md:flex-1 md:max-w-sm">
                     <div class="uppercase text-l font-semibold py-4 tracking-wide md:px-4">Contact Us</div>
-                    <div class="text-grey md:px-4">
+                    <div class="text-grey leading-normal md:px-4">
                         <div class="pb-6">
                             Bryants Custom Machine<br>
                             705 E. 4th St.<br>
