@@ -24,5 +24,10 @@
   "main": "webpack.mix.js",
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "glob-all": "^3.1.0",
+    "laravel-mix-purgecss": "^2.2.3",
+    "purgecss-webpack-plugin": "^1.3.0"
+  }
 }
