@@ -35,7 +35,7 @@ mix.js('source/_assets/js/main.js', 'js')
 // Only run PurgeCSS during production builds for faster development builds
 // and so you still have the full set of utilities available during
 // development.
-if (mix.inProduction()) {
+// if (mix.inProduction()) {
     mix.webpackConfig({
         plugins: [
             new PurgecssPlugin({
@@ -57,4 +57,4 @@ if (mix.inProduction()) {
             })
         ]
     });
-}
+// }
