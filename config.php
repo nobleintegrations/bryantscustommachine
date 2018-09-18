@@ -2,6 +2,6 @@
 
 return [
     'baseUrl' => '',
-    'production' => false,
+    'production' => true,
     'collections' => [],
 ];
