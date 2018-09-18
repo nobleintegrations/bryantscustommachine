@@ -6,17 +6,17 @@
             <div class="logo text-center lg:-m-20 block"><a href="#"><img style="width:19rem;" src="/assets/images/logo.png"></a></div>
             <div class="flex text-center justify-center lg:px-4">
                 <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:justify-start lg:px-4 xl:ml-4">
-                    <a href="#home" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Home</a>
-                    <a href="#services" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:ml-4 lg:p-4 xl:ml-12">Services</a>
+                    <a href="#home" v-smooth-scroll="{ duration: 1500, offset: 0 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Home</a>
+                    <a href="#services" v-smooth-scroll="{ duration: 1500, offset: -180 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:ml-4 lg:p-4 xl:ml-12">Services</a>
                 </div>
                 <div class="nav-right flex flex-row no-underline font-medium tracking-wide md:text-xl lg:justify-end lg:flex-1 xl:mr-4">
-                    <a href="#about" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 lg:mr-4 xl:mr-12">About</a>
-                    <a href="#contact" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Contact</a>
+                    <a href="#about" v-smooth-scroll="{ duration: 1500, offset: -180 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 lg:mr-4 xl:mr-12">About</a>
+                    <a href="#contact" v-smooth-scroll="{ duration: 1500, offset: -160 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Contact</a>
                 </div>
             </div>
         </header>
         <div class="flex flex-col hero text-center justify-center">
-            <div class="text-xl text-white font-light uppercase mb-4 md:text-3xl">
+            <div class="text-xl text-white font-light uppercase mb-6 md:text-3xl">
                 Innovative | Precise | Efficient
             </div>
             <div>
@@ -60,14 +60,14 @@
         <div class="bg-grey-darkest container text-grey text-xl text-center p-12 md:text-2xl">
             Need a custom part built for your business? Give us a call today.
         </div>
-        <div class="bg-white text-center">
+        <div id="contact" class="bg-white text-center">
             <div class="text-2xl uppercase font-light p-8"><span class="font-bold">Our</span> <span class="border-b-2 border-green">Loc</span>ation</div>
             <div class="w-full">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.7210128682455!2d-102.33059644899906!3d33.922579231903924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x870209999cec9961%3A0x204f1f5291c0dd1e!2s705+E+4th+St%2C+Littlefield%2C+TX+79339!5e0!3m2!1sen!2sus!4v1536605261178"
                     width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
-        <footer id="contact">
+        <footer>
             <div class="flex flex-col bg-black text-white container p-4 md:flex-row">
                 <div class="flex flex-col w-full font-light md:flex-1 md:max-w-sm">
                     <div class="uppercase text-l font-semibold py-4 tracking-wide md:px-4">Contact Us</div>

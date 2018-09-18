@@ -6,9 +6,16 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+        {{-- <link rel="stylesheet" href="{{ mix('js/main.js', 'assets/build') }}"> --}}
+        
         @include('_partials.seo')
     </head>
     <body class="bg-grey-light antialiased">
-        @yield('body')
+        <div id="app">
+            @yield('body')
+        </div>
+
+        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </body>
 </html>
