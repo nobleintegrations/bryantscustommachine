@@ -4,7 +4,7 @@
     <div id="home" class="lg:w-4/5 w-full bg-white mx-auto container">
         <header class="bg-white text-center sticky pin-t border-b-2 border-grey-light lg:pb-10 lg:pt-32">
             <div class="logo text-center lg:-m-20 block"><a href="#"><img style="width:19rem;" src="/assets/images/logo.png"></a></div>
-            <div class="flex pb-4 text-center justify-center lg:px-4">
+            <div class="flex text-center justify-center lg:px-4">
                 <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:justify-start lg:px-4 xl:ml-4">
                     <a href="#home" class="text-black no-underline px-4 py-2 rounded hover:bg-green-dark hover:text-white hover:border-green-dark lg:p-4">Home</a>
                     <a href="#services" class="text-black no-underline px-4 py-2 rounded hover:bg-green-dark hover:text-white hover:border-green-dark lg:ml-4 lg:p-4 xl:ml-12">Services</a>
@@ -52,7 +52,7 @@
                 <h3 class="text-left pb-4 font-light uppercase tracking-wide"><span class="font-bold border-b-2 border-green-dark">About</span> Us</h3>
                 <p class="text-left leading-loose text-grey-darkest text-sm">
                     Established in 2018, Bryants Custom Machine is located in Littlefield, TX. Although it’s a new bsuiness, Willie and Chase
-                    have over 40 years of expereince in the water well industry. They’ve decided to take their talets and start out on a new
+                    have over 40 years of expereince in the water well industry. They’ve decided to take their talents and start out on a new
                     endeavor as a family owned and operated business.
                 </p>
             </div>
