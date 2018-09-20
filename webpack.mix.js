@@ -44,7 +44,7 @@ mix.js('source/_assets/js/main.js', 'js')
                 // Specify the locations of any files you want to scan for class names.
                 paths: glob.sync([
                     path.join(__dirname, "source/**/*.blade.php"),
-                    //path.join(__dirname, "sources/**/js/**/*.vue")
+                    //path.join(__dirname, "source/**/js/**/*.vue")
                 ]),
                 extractors: [
                     {
