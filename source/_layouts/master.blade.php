@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
         @if ($page->production == 'true')
-            @include('_partials.google_analytics')
+            @include('_partials.googleanalytics')
         @endif
         @include('_partials.seo')
     </head>
