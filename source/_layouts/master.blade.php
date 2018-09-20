@@ -7,10 +7,10 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-        @if ($page->production == 'true')
-            @include('_partials.googleanalytics')
-        @endif
         @include('_partials.seo')
+        @if ($page->production == 'true')
+            @include('_partials.googleanalytics') 
+        @endif
     </head>
     <body class="bg-grey-light antialiased">
         <div id="app">

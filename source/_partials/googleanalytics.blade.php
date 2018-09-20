@@ -1,1 +1,1 @@
-    <meta>google analytics here</meta>
+    {{-- <meta>google analytics here</meta> --}}
