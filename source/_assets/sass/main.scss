@@ -4,6 +4,9 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+header a {
+    @apply .text-black;
+}
 
 .hero {
     @apply .bg-top .bg-no-repeat .bg-cover;
@@ -18,4 +21,8 @@ body {
         height: 250px;
     }
 }
+.active {
+    @apply .text-white .bg-green .border-green;
+}
+
 @tailwind utilities;

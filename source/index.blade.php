@@ -2,21 +2,21 @@
 
 @section('body')
     <div id="home" class="lg:w-4/5 w-full bg-white mx-auto container">
-        <header class="bg-white text-center sticky pin-t border-b-2 border-grey-light lg:pb-10 lg:pt-32">
-            <div class="logo text-center lg:-m-20 block"><a href="#"><img style="width:19rem;" src="/assets/images/logo.png"></a></div>
-            <div class="flex text-center justify-center lg:px-4">
-                <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:justify-start lg:px-4 xl:ml-4">
-                    <a href="#home" v-smooth-scroll="{ duration: 1500, offset: 0 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Home</a>
-                    <a href="#services" v-smooth-scroll="{ duration: 1500, offset: -180 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:ml-4 lg:p-4 xl:ml-12">Services</a>
-                </div>
-                <div class="nav-right flex flex-row no-underline font-medium tracking-wide md:text-xl lg:justify-end lg:flex-1 xl:mr-4">
-                    <a href="#about" v-smooth-scroll="{ duration: 1500, offset: -180 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 lg:mr-4 xl:mr-12">About</a>
-                    <a href="#contact" v-smooth-scroll="{ duration: 1500, offset: -160 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Contact</a>
-                </div>
-            </div>
+        <header class="bg-white text-black text-center sticky pin-t border-b-2 border-grey-light lg:pb-10 lg:pt-32">
+            <div class="logo text-center lg:-m-20 block"><a href="#home"><img style="width:19rem;" src="/assets/images/logo.png"></a></div>
+                <nav class="flex nav-scroll-items text-center justify-center mb-2 lg:px-4">
+                    <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:justify-start lg:px-4 xl:ml-4">
+                        <a href="#home"  v-navscroll="{ active: 'active-element' }" class="item text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 scrollactive-item">Home</a>
+                        <a href="#services" v-navscroll="{ active: 'active-element' }" class="item text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:ml-4 lg:p-4 xl:ml-12 scrollactive-item">Services</a>
+                    </div>
+                    <div class="nav-right flex flex-row no-underline font-medium tracking-wide md:text-xl lg:justify-end lg:flex-1 xl:mr-4">
+                        <a href="#about" v-smooth-scroll="{ duration: 1500, offset: -180 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 lg:mr-4 xl:mr-12 scrollactive-item">About</a>
+                        <a href="#contact" v-smooth-scroll="{ duration: 1500, offset: -160 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 scrollactive-item">Contact</a>
+                    </div>
+                </nav>
         </header>
         <div class="flex flex-col hero text-center justify-center">
-            <div class="text-xl text-white font-light uppercase mb-6 md:text-3xl">
+            <div class="text-xl text-white font-hairline uppercase mb-6 md:text-3xl">
                 Innovative | Precise | Efficient
             </div>
             <div>
@@ -63,7 +63,7 @@
         <div id="contact" class="bg-white text-center">
             <div class="text-2xl uppercase font-light p-8"><span class="font-bold">Our</span> <span class="border-b-2 border-green">Loc</span>ation</div>
             <div class="w-full">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.7210128682455!2d-102.33059644899906!3d33.922579231903924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x870209999cec9961%3A0x204f1f5291c0dd1e!2s705+E+4th+St%2C+Littlefield%2C+TX+79339!5e0!3m2!1sen!2sus!4v1536605261178"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.721012864555!2d-102.33059108456675!3d33.92257923199888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8702096b61332d47%3A0x8ebbdaf00a8191cf!2sBryants+Custom+Machine!5e0!3m2!1sen!2sus!4v1537560191325"
                     width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
@@ -89,15 +89,15 @@
                         <form name="contact" class="flex flex-col md:flex-row" method="POST" netlify>
                             <div class="md:w-1/3 md:flex-1 md:mr-2">
                                 <input class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight mb-2 focus:outline-none focus:bg-white focus:border-green"
-                                    id="inline-full-name" name="name" type="text" value="Full Name">
+                                    id="inline-full-name" name="name" type="text" placeholder="Full Name">
                                 <input class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none mb-2 focus:bg-white focus:border-green"
-                                    id="inline-full-name" name="email" type="text" value="Email">
+                                    id="inline-full-name" name="email" type="text" placeholder="Email">
                                 <input class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight mb-2 focus:outline-none focus:bg-white focus:border-green"
-                                    id="inline-full-name" name="phone" type="text" value="Phone">
+                                    id="inline-full-name" name="phone" type="text" placeholder="Phone">
                             </div>
                             <div class="md:w-2/3 md:flex-1">
                                 <textarea class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none
-                                focus:bg-white focus:border-green sm:mb-2 md:mb-1" name="message" rows="4">Message</textarea>
+                                focus:bg-white focus:border-green sm:mb-2 md:mb-1" name="message" rows="4" placeholder="Message"></textarea>
                                 <button class="shadow bg-green text-white font-bold py-2 px-4 rounded w-full hover:bg-green-light focus:shadow-outline focus:outline-none"
                                     type="submit">
                                     Send

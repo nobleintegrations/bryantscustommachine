@@ -661,6 +661,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+header a {
+  color: #22292f;
+}
+
 .hero {
   background-position: top;
   background-repeat: no-repeat;
@@ -674,6 +678,12 @@ body {
   .hero {
     height: 250px;
   }
+}
+
+.active {
+  color: #fff;
+  background-color: #119122;
+  border-color: #119122;
 }
 
 .list-reset {
