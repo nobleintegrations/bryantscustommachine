@@ -6,12 +6,12 @@
             <div class="logo text-center lg:-m-20 block"><a href="#home"><img style="width:19rem;" src="/assets/images/logo.png"></a></div>
                 <nav class="flex nav-scroll-items text-center justify-center mb-2 lg:px-4">
                     <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:justify-start lg:px-4 xl:ml-4">
-                        <a href="#home"  v-navscroll="{ active: 'active-element' }" class="item text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 scrollactive-item">Home</a>
-                        <a href="#services" v-navscroll="{ active: 'active-element' }" class="item text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:ml-4 lg:p-4 xl:ml-12 scrollactive-item">Services</a>
+                        <a href="#home"  v-smooth-scroll="{ duration: 1500, offset: -180 }" class="item text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Home</a>
+                        <a href="#services" v-smooth-scroll="{ duration: 1500, offset: -180 }" class="item text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:ml-4 lg:p-4 xl:ml-12">Services</a>
                     </div>
                     <div class="nav-right flex flex-row no-underline font-medium tracking-wide md:text-xl lg:justify-end lg:flex-1 xl:mr-4">
-                        <a href="#about" v-smooth-scroll="{ duration: 1500, offset: -180 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 lg:mr-4 xl:mr-12 scrollactive-item">About</a>
-                        <a href="#contact" v-smooth-scroll="{ duration: 1500, offset: -160 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 scrollactive-item">Contact</a>
+                        <a href="#about" v-smooth-scroll="{ duration: 1500, offset: -180 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 lg:mr-4 xl:mr-12">About</a>
+                        <a href="#contact" v-smooth-scroll="{ duration: 1500, offset: -170 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Contact</a>
                     </div>
                 </nav>
         </header>
@@ -26,7 +26,7 @@
         <div id="services" class="flex flex-col bg-white container px-8 pt-8 justify-between md:flex-row">
             <div class="bg-grey-light p-8 mb-4 md:w-1/3 md:mr-4">
                 <h3 class="text-right pb-4 font-light uppercase tracking-wide"><span class="font-bold">Our</span> Ser<span class="border-b-2 border-green">vices</span></h3>
-                <p class="text-right leading-loose text-sm text-grey-darkest">We provide a wide variety of services in the water well and oil field industry. We can custom make any part for your shop
+                <p class="text-right leading-loose text-base text-grey-darkest">We provide a wide variety of services in the water well and oil field industry. We can custom make any part for your shop
                 and help fill in any manufacturing gaps. More info about services will go here once I have the information.</p>
             </div>
             <div class="mb-4 overflow-hidden md:w-1/3 md:mr-4">
@@ -40,7 +40,7 @@
             <div class="overflow-hidden mb-2 md:w-1/3">
                 <img src="/assets/images/services-card2.jpg">
                 <div class="py-4">
-                    <div class="font-bold text-l text-green uppercase">Custom Machining</div>
+                    <div class="font-bold text-l mb-2 text-green uppercase">Custom Machining</div>
                     <p class="text-sm text-grey-darker leading-normal">Our shop can make any part you need for your operation. We specialize in creating those hard to find parts needed in the
                     water well and oil field industries.</p>
                 </div>
@@ -50,7 +50,7 @@
             <div class="flex-grow bg-cover p-8 mb-4 h-64 md:mr-8 md:w-1/2 md:mb-0 md:h-auto" style="background-image: url('/assets/images/aboutus.jpg')"></div>
             <div class="flex-1 bg-grey-light p-8 md:w-1/2">
                 <h3 class="text-left pb-4 font-light uppercase tracking-wide"><span class="font-bold border-b-2 border-green">About</span> Us</h3>
-                <p class="text-left leading-loose text-grey-darkest text-sm">
+                <p class="text-left leading-loose text-grey-darkest text-base">
                     Established in 2018, Bryants Custom Machine is located in Littlefield, TX. Although it’s a new bsuiness, Willie and Chase
                     have over 40 years of expereince in the water well industry. They’ve decided to take their talents and start out on a new
                     endeavor as a family owned and operated business.
