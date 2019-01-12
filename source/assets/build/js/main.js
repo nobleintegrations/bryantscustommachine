@@ -81,14 +81,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_smooth_scroll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_smooth_scroll__);
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_smooth_scroll___default.a);
-
 var app = new Vue({
-    el: '#app',
-    data: {},
-    methods: {}
-    // ...
+  el: '#app',
+  data: {},
+  methods: {} // ...
+  // ...
 
-    // ...
 });
 
 /***/ }),
