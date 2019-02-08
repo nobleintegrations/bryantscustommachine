@@ -12,7 +12,7 @@
             @include('_partials.googleanalytics') 
         @endif
     </head>
-    <body class="bg-grey-light antialiased">
+    <body class=" bg-grey-light antialiased">
         <div id="app">
             @yield('body')
         </div>
