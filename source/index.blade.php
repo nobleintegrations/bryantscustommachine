@@ -4,7 +4,7 @@
     <div id="home" class="lg:w-4/5 w-full bg-white mx-auto container">
         <header class="bg-white text-center sticky pin-t border-b-2 border-grey-light lg:pb-8 lg:pt-24">
             <div class="logo text-center lg:-m-20 block"><a href="#home"><img style="width:19rem;" src="/assets/images/logo.png"></a></div>
-                <scrollactive :offset="152" class="flex my-nav text-center justify-center mb-2 lg:px-4">
+                <scrollactive active-class="active" :offset="152" class="flex my-nav text-center justify-center mb-2 lg:px-4">
                     <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:justify-start lg:px-4 xl:ml-4">
                         <a href="#home" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Home</a>
                         <a href="#services" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:ml-4 lg:p-4 xl:ml-12">Services</a>
