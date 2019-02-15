@@ -2,18 +2,18 @@
 
 @section('body')
     <div id="home" class="lg:w-4/5 w-full bg-white mx-auto container">
-        <header class="bg-white text-black text-center sticky pin-t border-b-2 border-grey-light lg:pb-10 lg:pt-32">
+        <header class="bg-white text-center sticky pin-t border-b-2 border-grey-light lg:pb-8 lg:pt-24">
             <div class="logo text-center lg:-m-20 block"><a href="#home"><img style="width:19rem;" src="/assets/images/logo.png"></a></div>
-                <nav class="flex nav-scroll-items text-center justify-center mb-2 lg:px-4">
+                <scrollactive :offset="152" class="flex my-nav text-center justify-center mb-2 lg:px-4">
                     <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:justify-start lg:px-4 xl:ml-4">
-                        <a href="#home"  v-smooth-scroll="{ duration: 1500, offset: -180 }" class="item text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Home</a>
-                        <a href="#services" v-smooth-scroll="{ duration: 1500, offset: -180 }" class="item text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:ml-4 lg:p-4 xl:ml-12">Services</a>
+                        <a href="#home" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Home</a>
+                        <a href="#services" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:ml-4 lg:p-4 xl:ml-12">Services</a>
                     </div>
                     <div class="nav-right flex flex-row no-underline font-medium tracking-wide md:text-xl lg:justify-end lg:flex-1 xl:mr-4">
-                        <a href="#about" v-smooth-scroll="{ duration: 1500, offset: -180 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 lg:mr-4 xl:mr-12">About</a>
-                        <a href="#contact" v-smooth-scroll="{ duration: 1500, offset: -170 }" class="text-black no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Contact</a>
+                        <a href="#about" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4 lg:mr-4 xl:mr-12">About</a>
+                        <a href="#contact" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-green hover:text-white hover:border-green lg:p-4">Contact</a>
                     </div>
-                </nav>
+                </scrollactive>
         </header>
         <div class="flex flex-col hero text-center justify-center">
             <div class="text-xl text-white font-hairline uppercase mb-6 md:text-3xl">

@@ -1,6 +1,5 @@
-import vueSmoothScroll from 'vue-smooth-scroll'
-Vue.use(vueSmoothScroll)
-
+var Scrollactive = require('vue-scrollactive');
+Vue.use(Scrollactive);
 
 var app = new Vue({
     el: '#app',
