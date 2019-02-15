@@ -2,7 +2,8 @@ let mix = require('laravel-mix');
 let build = require('./tasks/build.js');
 var tailwindcss = require('tailwindcss');
 let glob = require("glob-all");
-let PurgecssPlugin = require("purgecss-webpack-plugin");
+// let PurgecssPlugin = require("purgecss-webpack-plugin");
+require('laravel-mix-purgecss');
 
 // Custom PurgeCSS extractor for Tailwind that allows special characters in
 // class names.
@@ -29,34 +30,15 @@ mix.js('source/_assets/js/main.js', 'js')
     .options({
         processCssUrls: false,
         postCss: [tailwindcss('tailwind.js')],
-    }).version();
+    })
+    .purgeCss({
+        extensions: ['html', 'md', 'js', 'php', 'vue'],
+        folders: ['source'],
+        hitelistPatterns: [/language/, /hljs/],
+    })
+    .version();
 
 
 // Only run PurgeCSS during production builds for faster development builds
 // and so you still have the full set of utilities available during
 // development.
- 
-if (mix.inProduction()) {
-    console.log('production mode - engaged')
-    mix.webpackConfig({
-        plugins: [
-            new PurgecssPlugin({
-
-                // Specify the locations of any files you want to scan for class names.
-                paths: glob.sync([
-                    path.join(__dirname, "source/**/*.blade.php"),
-                    path.join(__dirname, "source/**/js/**/*.vue")
-                ]),
-                extractors: [
-                    {
-                        extractor: TailwindExtractor,
-
-                        // Specify the file extensions to include when scanning for
-                        // class names.
-                        extensions: ["html", "js", "php", "vue"]
-                    }
-                ]
-            })
-        ]
-    });
-}

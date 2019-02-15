@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
-    <div id="home" class="lg:w-4/5 w-full bg-white mx-auto container">
+    <div id="home" class="lg:w-4/5 w-full bg-white mx-auto container shadow">
         <header class="bg-white text-center sticky pin-t border-b-2 border-grey-light lg:pb-8 lg:pt-24">
             <div class="logo text-center lg:-m-20 block"><a href="#home"><img style="width:19rem;" src="/assets/images/logo.png"></a></div>
                 <scrollactive active-class="active" :offset="152" class="flex my-nav text-center justify-center mb-2 lg:px-4">
