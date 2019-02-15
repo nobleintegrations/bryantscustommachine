@@ -107,9 +107,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col bg-grey-dark py-4 container text-grey-lighter px-4 text-center justify-between font-light md:flex-row">
+            <div class="flex flex-col bg-grey-dark py-4 container text-grey-light px-4 text-center justify-between font-light md:flex-row">
                 <div class="text-sm mb-4 md:mb-0 md:text-base">Copyright All Rights Reserved &copy; 2018</div>
-                <div class="text-xs text-grey-light md:text-base md:text-grey-lighter">Powered by <a class="no-underline text-grey-light hover:text-black md:text-base md:text-grey-lighter" href="https://nobleintegrationsllc.com">Noble Integrations LLC</a></div>
+                <div class="text-xs text-grey-light md:text-base">Powered by <a class="no-underline text-grey-light hover:text-black md:text-base" href="https://nobleintegrationsllc.com">Noble Integrations LLC</a></div>
             </div>
         </footer>
     </div>
