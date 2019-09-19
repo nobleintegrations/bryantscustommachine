@@ -1,4 +1,4 @@
-@tailwind preflight;
+@tailwind base;
 
 @tailwind components;
 body {
@@ -12,10 +12,10 @@ header a {
     @apply .bg-top .bg-no-repeat .bg-cover;
     background: 
         linear-gradient(
-            rgba(17, 145, 34, 0.20), 
-            rgba(17, 145, 34, 0.20)
+            rgba(12, 108, 34, 0.40), 
+            rgba(12, 108, 34, 0.40)
         ),
-        url('../../images/hero.jpg');
+        url('https://res.cloudinary.com/noble-integrations/image/upload/v1568923636/BCM/hero_image4_pc7qkx.jpg');
     height: 400px;
     @media only screen and (max-width: 767px) {
         height: 250px;
@@ -23,7 +23,7 @@ header a {
 }
 
 .active {
-    @apply .text-white .bg-green .border-green;
+    @apply .text-white .bg-customGreenDarker .border-customGreenDarker;
 }
 
 @tailwind utilities;
