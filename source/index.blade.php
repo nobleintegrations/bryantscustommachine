@@ -1,9 +1,9 @@
 @extends('_layouts.master')
 
 @section('body')
-    <div id="home" class="lg:w-4/5 w-full bg-white mx-auto container shadow-2xl">
+    <div id="home" class="w-full bg-white mx-auto container shadow-2xl">
         <header class="bg-white text-center sticky top-0 border-b-2 border-gray-300 lg:pb-6 lg:pt-24">
-            <div class="logo lg:-m-20 flex justify-center"><a href="#home"><img class="text-center" style="width:16rem;" src="/assets/images/logo.png"></a></div>
+            <div class="logo lg:-m-20 flex justify-center"><a href="#home"><img class="text-center" style="width:16rem;" src="/assets/images/logo.png" alt="Bryants Custom Machine"></a></div>
                 <scrollactive active-class="active" :offset="152" class="flex my-nav text-center justify-center mb-2 lg:px-4">
                     <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:px-4 xl:ml-4">
                         <a href="#home" class="scrollactive-item no-underline px-4 py-2 mr-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4">Home</a>
@@ -15,36 +15,35 @@
                     </div>
                 </scrollactive>
         </header>
-        <div class="flex flex-col hero text-center justify-center">
+        <section class="flex flex-col hero text-center justify-center">
             <div class="text-xl text-white font-hairline uppercase mb-6 md:text-3xl shadow-lg">
                 Innovative | Precise | Efficient
             </div>
             <div>
                 <button class="bg-white text-black px-8 py-4 rounded hover:bg-black hover:text-white">(806) 385-3738</button>
-            </div>
-            
-        </div>
+            </div>   
+        </section>
         <svg class="container h-6 md:h-12 text-white w-full -mt-8 md:-mt-16" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
             <polygon points="50,0 100,100 100,100 0,100 0" />
         </svg>
         <div id="services" class="flex flex-col bg-white container px-4 py-12 justify-between md:flex-row">
             <div class="bg-gray-300 p-8 mb-4 md:w-1/3 md:mr-4">
-                <h3 class="text-left md:text-right font-light text-xl uppercase tracking-wide"><span class="font-bold">Our</span> Services</h3>
+                <h3 class="text-left md:text-right font-light text-xl uppercase tracking-wide not-sr-only"><span class="font-bold">Our</span> Services</h3>
                 <hr class="ml-0 md:ml-auto md:mr-0 border-t-2 border-customGreenDarker w-12 pb-4">
                 <p class="text-left md:text-right leading-loose text-base text-gray-800">As a family owned and operated business, we understand the challenges and disconnect customers face when dealing with
                 overseas companies or large corporations. We stand behind our product 100% and guarantee each part received will be of
                 highest quality and within the industries specifications.</p>
             </div>
             <div class="mb-4 overflow-hidden md:w-1/3 md:mr-4">
-                <img src="https://res.cloudinary.com/noble-integrations/image/upload/v1568924471/BCM/service2_k4ccc1.jpg">
+                <img src="https://res.cloudinary.com/noble-integrations/image/upload/v1568924471/BCM/service2_k4ccc1.jpg" alt="Threaded Pipe Picture">
                 <div class="py-4">
                     <div class="font-bold text-l mb-2 text-customGreenDarker uppercase tracking-wide">Threaded Pipe</div>
-                    <p class="text-sm text-gray-800 leading-normal">We manufactuer threaded column pipe for any job application. Our threads are machined to be precise and quality is our top
+                    <p class="text-sm text-gray-800 leading-normal">We manufactuer up to 3" pipe for water well applications. Our threads are machined to be precise and quality is our top
                     priority. We guarantee our products.</p>
                 </div>
             </div>
             <div class="overflow-hidden mb-2 md:w-1/3">
-                <img src="https://res.cloudinary.com/noble-integrations/image/upload/v1568924471/BCM/service1_z3mob7.jpg">
+                <img src="https://res.cloudinary.com/noble-integrations/image/upload/v1568924471/BCM/service1_z3mob7.jpg" alt="Custom Maching Picture">
                 <div class="py-4">
                     <div class="font-bold text-l mb-2 text-customGreenDarker uppercase tracking-wide">Custom Machining</div>
                     <p class="text-sm text-gray-800 leading-normal">Our shop can make any part you need for your operation. We specialize in creating those hard to find parts needed in the
