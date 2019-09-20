@@ -6,12 +6,12 @@
             <div class="logo lg:-m-20 flex justify-center"><a href="#home"><img class="text-center" style="width:16rem;" src="/assets/images/logo.png"></a></div>
                 <scrollactive active-class="active" :offset="152" class="flex my-nav text-center justify-center mb-2 lg:px-4">
                     <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:px-4 xl:ml-4">
-                        <a href="#home" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4">Home</a>
-                        <a href="#services" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:ml-4 lg:p-4 xl:ml-12">Services</a>
+                        <a href="#home" class="scrollactive-item no-underline px-4 py-2 mr-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4">Home</a>
+                        <a href="#services" class="scrollactive-item no-underline px-4 py-2 mr-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:ml-4 lg:p-4 xl:ml-12">Services</a>
                     </div>
                     <div class="nav-right flex flex-row no-underline font-medium tracking-wide md:text-xl lg:justify-end lg:flex-1 xl:mr-4">
-                        <a href="#about" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4 lg:mr-4 xl:mr-12">About</a>
-                        <a href="#contact" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4">Contact</a>
+                        <a href="#about" class="scrollactive-item no-underline px-4 py-2 mr-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4 lg:mr-4 xl:mr-12">About</a>
+                        <a href="#contact" class="scrollactive-item no-underline px-4 py-2 mr-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4">Contact</a>
                     </div>
                 </scrollactive>
         </header>
@@ -24,13 +24,14 @@
             </div>
             
         </div>
-        <svg class="container h-12 text-white w-full -mt-16" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <svg class="container h-6 md:h-12 text-white w-full -mt-8 md:-mt-16" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
             <polygon points="50,0 100,100 100,100 0,100 0" />
         </svg>
         <div id="services" class="flex flex-col bg-white container px-4 py-12 justify-between md:flex-row">
             <div class="bg-gray-300 p-8 mb-4 md:w-1/3 md:mr-4">
-                <h3 class="text-right pb-4 font-light text-lg uppercase tracking-wide"><span class="font-bold">Our</span> Ser<span class="border-b-2 pb-2 border-customGreen">vices</span></h3>
-                <p class="text-right leading-loose text-base text-gray-800">As a family owned and operated business, we understand the challenges and disconnect customers face when dealing with
+                <h3 class="text-left md:text-right font-light text-xl uppercase tracking-wide"><span class="font-bold">Our</span> Services</h3>
+                <hr class="ml-0 md:ml-auto md:mr-0 border-t-2 border-customGreenDarker w-12 pb-4">
+                <p class="text-left md:text-right leading-loose text-base text-gray-800">As a family owned and operated business, we understand the challenges and disconnect customers face when dealing with
                 overseas companies or large corporations. We stand behind our product 100% and guarantee each part received will be of
                 highest quality and within the industries specifications.</p>
             </div>
@@ -99,7 +100,7 @@
         <div id="about" class="flex flex-col bg-gray-300er px-4 py-12 justify-between md:flex-row">
             <div class="flex-grow bg-cover p-8 mb-4 h-64 md:mr-6 md:w-1/2 md:mb-0 md:h-auto" style="background-image: url('https://res.cloudinary.com/noble-integrations/image/upload/v1568924653/BCM/about_x9mbfd.jpg')"></div>
             <div class="flex-1 bg-gray-300 p-8 md:w-1/2">
-                <h3 class="text-left pb-4 font-light text-lg uppercase tracking-wide"><span class="font-bold border-b-2 pb-2 border-customGreen">About</span> Us</h3>
+                <h3 class="text-left pb-4 font-light text-xl uppercase tracking-wide"><span class="font-bold border-b-2 pb-2 border-customGreen">About</span> Us</h3>
                 <p class="text-left leading-loose text-gray-800 text-base">
                     Established in 2018, Bryants Custom Machine is located in Littlefield, TX. A family owned and operated business with more than 40 Years of experience in the water well industry.<br><br>Our mission is to manufacture a precise product in a timely manner at a reasonable price!
                 </p>
@@ -109,7 +110,7 @@
             Need a custom part built for your business? Give us a call today.
         </div>
         <div id="contact" class="bg-white text-center">
-            <div class="text-2xl uppercase font-light p-8"><span class="font-bold">Our</span> <span class="border-b-2 border-customGreen">Loc</span>ation</div>
+            <div class="text-xl uppercase font-light p-8"><span class="font-bold">Our</span> <span class="border-b-2 border-customGreen">Loc</span>ation</div>
             <div class="w-full">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.721012864555!2d-102.33059108456675!3d33.92257923199888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8702096b61332d47%3A0x8ebbdaf00a8191cf!2sBryants+Custom+Machine!5e0!3m2!1sen!2sus!4v1537560191325"
                     width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
