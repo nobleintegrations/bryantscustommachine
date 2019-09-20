@@ -106,7 +106,7 @@
                 </p>
             </div>
         </div>
-        <div class="bg-gray-800 container text-gray-400 text-xl text-center p-12 md:text-2xl">
+        <div class="bg-gray-800 container text-gray-400 text-xl text-center px-4 py-8 md:p-12 md:text-2xl">
             Need a custom part built for your business? Give us a call today.
         </div>
         <div id="contact" class="bg-white text-center">
