@@ -9,7 +9,7 @@ header a {
 }
 
 .hero {
-    @apply .bg-top .bg-no-repeat .bg-cover;
+    @apply .bg-bottom .bg-no-repeat .bg-cover;
     background: 
         linear-gradient(
             rgba(12, 108, 34, 0.40), 
@@ -23,7 +23,7 @@ header a {
 }
 
 .active {
-    @apply .text-white .bg-customGreenDarker .border-customGreenDarker;
+    @apply .text-white .bg-customGreen .border-customGreen;
 }
 
 @tailwind utilities;
