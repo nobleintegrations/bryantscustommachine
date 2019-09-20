@@ -11,7 +11,7 @@
                     </div>
                     <div class="nav-right flex flex-row no-underline font-medium tracking-wide md:text-xl lg:justify-end lg:flex-1 xl:mr-4">
                         <a href="#about" class="scrollactive-item no-underline px-4 py-2 mr-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4 lg:mr-4 xl:mr-12">About</a>
-                        <a href="#contact" class="scrollactive-item no-underline px-4 py-2 mr-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4">Contact</a>
+                        <a href="#contact" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4">Contact</a>
                     </div>
                 </scrollactive>
         </header>
