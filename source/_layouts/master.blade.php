@@ -15,6 +15,9 @@
         @endif
     </head>
     <body class="antialiased">
+        @if ($page->production == 'true')
+            @include('_partials.googleanalytics-body')
+        @endif
         <div id="app">
             @yield('body')
         </div>
