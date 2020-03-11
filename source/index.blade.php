@@ -157,7 +157,7 @@
             </div>
             <div class="flex flex-col bg-gray-600 py-4 container text-gray-300 px-4 text-center justify-between font-light md:flex-row">
                 <div class="text-sm mb-4 md:mb-0 md:text-xs">Copyright All Rights Reserved &copy; 2019</div>
-                <div class="text-xs text-gray-300 md:text-sm">Powered by <a class="no-underline text-gray-300 hover:text-black md:text-sm" href="https://nobleintegrationsllc.com">Noble Integrations LLC</a></div>
+                <div class="text-xs text-gray-300 md:text-sm">Powered by <a class="no-underline text-gray-300 hover:text-black md:text-sm" target="_blank" href="https://nobleintegrationsllc.com">Noble Integrations LLC</a></div>
             </div>
         </footer>
     </div>
