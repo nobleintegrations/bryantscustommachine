@@ -4,12 +4,12 @@
     <div id="home" class="w-full bg-white mx-auto container shadow-2xl">
         <header class="bg-white text-center sticky top-0 border-b-2 border-gray-300 lg:pb-6 lg:pt-24">
             <div class="logo lg:-m-20 flex justify-center"><a href="#home"><img class="text-center" style="width:16rem;" src="/assets/images/logo.png" alt="Bryants Custom Machine"></a></div>
-                <scrollactive active-class="active" :offset="152" class="flex my-nav text-center justify-center mb-2 lg:px-4">
-                    <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:px-4 xl:ml-4">
+                <scrollactive active-class="active" :offset="135" class="flex my-nav text-center justify-center mb-2 lg:px-4">
+                    <div class="nav-left flex flex-row no-underline font-medium tracking-wide md:text-xl lg:flex-1 lg:px-4 xl:ml-8">
                         <a href="#home" class="scrollactive-item no-underline px-4 py-2 mr-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4">Home</a>
                         <a href="#services" class="scrollactive-item no-underline px-4 py-2 mr-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:ml-4 lg:p-4 xl:ml-12">Services</a>
                     </div>
-                    <div class="nav-right flex flex-row no-underline font-medium tracking-wide md:text-xl lg:justify-end lg:flex-1 xl:mr-4">
+                    <div class="nav-right flex flex-row no-underline font-medium tracking-wide md:text-xl lg:justify-end lg:flex-1 xl:mr-8">
                         <a href="#about" class="scrollactive-item no-underline px-4 py-2 mr-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4 lg:mr-4 xl:mr-12">About</a>
                         <a href="#contact" class="scrollactive-item no-underline px-4 py-2 rounded hover:bg-customGreen hover:text-white hover:border-customGreen lg:p-4">Contact</a>
                     </div>
@@ -20,14 +20,14 @@
                 Innovative | Precise | Efficient
             </div>
             <div>
-                <button class="bg-white text-black px-8 py-4 rounded hover:bg-black hover:text-white">(806) 385-3738</button>
+                <button class="bg-white text-black px-8 py-4 rounded hover:bg-black hover:text-white"><a href="tel:806-385-3738">(806) 385-3738</a></button>
             </div>   
         </section>
         <svg class="container h-6 md:h-12 text-white w-full -mt-8 md:-mt-16" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
             <polygon points="50,0 100,100 100,100 0,100 0" />
         </svg>
         <div id="services" class="flex flex-col bg-white container px-4 py-12 justify-between md:flex-row">
-            <div class="bg-gray-300 p-8 mb-4 md:w-1/3 md:mr-4">
+            <div class="bg-gray-200 p-8 mb-4 md:w-1/3 md:mr-4">
                 <h3 class="text-left md:text-right font-light text-xl uppercase tracking-wide not-sr-only"><span class="font-bold">Our</span> Services</h3>
                 <hr class="ml-0 md:ml-auto md:mr-0 border-t-2 border-customGreenDarker w-12 pb-4">
                 <p class="text-left md:text-right leading-loose text-base text-gray-800">As a family owned and operated business, we understand the challenges and disconnect customers face when dealing with
@@ -96,9 +96,9 @@
                     or shaft with ease.</div>
             </div>
         </div>
-        <div id="about" class="flex flex-col bg-gray-300er px-4 py-12 justify-between md:flex-row">
+        <div id="about" class="flex flex-col px-4 py-12 justify-between md:flex-row">
             <div class="flex-grow bg-cover p-8 mb-4 h-64 md:mr-6 md:w-1/2 md:mb-0 md:h-auto" style="background-image: url('https://res.cloudinary.com/noble-integrations/image/upload/v1568924653/BCM/about_x9mbfd.jpg')"></div>
-            <div class="flex-1 bg-gray-300 p-8 md:w-1/2">
+            <div class="flex-1 bg-gray-200 p-8 md:w-1/2">
                 <h3 class="text-left pb-4 font-light text-xl uppercase tracking-wide"><span class="font-bold border-b-2 pb-2 border-customGreen">About</span> Us</h3>
                 <p class="text-left leading-loose text-gray-800 text-base">
                     Established in 2018, Bryants Custom Machine is located in Littlefield, TX. A family owned and operated business with more than 40 Years of experience in the water well industry.<br><br>Our mission is to manufacture a precise product in a timely manner at a reasonable price!
@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class="bg-gray-800 container text-gray-400 text-xl text-center px-4 py-8 md:p-12 md:text-2xl">
-            Need a custom part built for your business? Give us a call today.
+            Need a custom part built for your business? Give us a <a href="tel:806-385-3738" class="border-b-2 border-customGreen hover:border-gray-400">call</a> today.
         </div>
         <div id="contact" class="bg-white text-center">
             <div class="text-xl uppercase font-light p-8"><span class="font-bold">Our</span> <span class="border-b-2 border-customGreen">Loc</span>ation</div>
@@ -136,17 +136,17 @@
                     <div class="">
                         <form name="contact" class="flex flex-col md:flex-row" method="POST" netlify>
                             <div class="md:w-1/3 md:flex-1 md:mr-2">
-                                <input class="bg-gray-300 appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-600 leading-tight mb-2 focus:bg-white focus:border-customGreen"
+                                <input class="bg-gray-300 appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-600 leading-tight mb-2 focus:bg-white focus:outline-none focus:border-customGreen"
                                     id="inline-full-name" name="name" type="text" placeholder="Full Name">
-                                <input class="bg-gray-300 appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-600 leading-tight mb-2 focus:bg-white focus:border-customGreen"
+                                <input class="bg-gray-300 appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-600 leading-tight mb-2 focus:bg-white focus:outline-none focus:border-customGreen"
                                     id="inline-full-name" name="email" type="text" placeholder="Email">
-                                <input class="bg-gray-300 appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-600 leading-tight mb-2 focus:bg-white focus:border-customGreen"
+                                <input class="bg-gray-300 appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-600 leading-tight mb-2 focus:bg-white focus:outline-none focus:border-customGreen"
                                     id="inline-full-name" name="phone" type="text" placeholder="Phone">
                             </div>
                             <div class="md:w-2/3 md:flex-1">
                                 <textarea class="bg-gray-300 appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-600 leading-tight
-                                focus:bg-white focus:border-customGreen sm:mb-2 md:mb-1" name="message" rows="4" placeholder="Message"></textarea>
-                                <button class="shadow bg-customGreenDarker text-white font-bold py-2 px-4 rounded w-full hover:bg-customGreen focus:shadow-outline"
+                                focus:bg-white focus:outline-none focus:border-customGreen sm:mb-2 md:mb-1" name="message" rows="4" placeholder="Message"></textarea>
+                                <button class="shadow bg-customGreenDarker text-white font-bold py-2 px-4 rounded w-full hover:bg-customGreen focus:outline-none"
                                     type="submit">
                                     Send
                                 </button>
