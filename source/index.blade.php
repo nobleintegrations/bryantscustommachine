@@ -155,7 +155,7 @@
                     </div>
                     <div class="pb-4">
                         <b>Phone:</b> <a class="hover:underline" href="tel:806-470-8511">(806) 470-8511</a><br>
-                        <b>Email:</b> <a class="hover:underline" href="mailto:info@bryantscustommachine.com">info@bryantscustommachine.com</a>
+                        <b>Email:</b> <a class="hover:underline" href="mailto:chase@bryantscustommachine.com">chase@bryantscustommachine.com</a>
                     </div>
                 </div>
             </div>
