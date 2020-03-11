@@ -33,7 +33,7 @@
     </section>
     <svg class="container h-6 md:h-12 text-white w-full -mt-8 md:-mt-16" fill="currentColor" viewBox="0 0 100 100"
         preserveAspectRatio="none">
-        <polygon points="50,0 100,100 100,100 0,100 0" />
+        <polygon points="50,0 100,100 100,100 0,100" />
     </svg>
     <div id="services" class="flex flex-col bg-white container px-4 py-12 justify-between md:flex-row">
         <div class="bg-gray-200 p-8 mb-4 md:w-1/3 md:mr-4">
