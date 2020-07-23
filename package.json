@@ -23,7 +23,7 @@
         "tailwindcss": "^1.5.2",
         "vue": "^2.6.11",
         "vue-template-compiler": "^2.6.11",
-        "yargs": "^4.6.0"
+        "yargs": "^15.4.1"
     },
     "name": "bryantscustommachine",
     "version": "1.0.0",
