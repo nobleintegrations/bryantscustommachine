@@ -1,4 +1,7 @@
 module.exports = {
+  purge: [
+    './source/**/*.php',
+  ],
   theme: {
     screens: {
       sm: '576px',
