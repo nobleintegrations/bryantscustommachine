@@ -1,3 +1,24 @@
+const mix = require('laravel-mix');
+require('laravel-mix-jigsaw');
+
+mix.disableSuccessNotifications();
+mix.setPublicPath('source/assets/build');
+
+mix.jigsaw()
+    .js('source/_assets/js/main.js', 'js')
+    .css('source/_assets/css/main.css', 'css', [
+        require('postcss-import'),
+        require('tailwindcss'),
+    ])
+    .options({
+        processCssUrls: false,
+    })
+    .version();
+
+
+
+
+/*
 let mix = require('laravel-mix');
 let build = require('./tasks/build.js');
 var tailwindcss = require('tailwindcss');
@@ -17,13 +38,7 @@ class TailwindExtractor {
 
 mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build');
-mix.webpackConfig({
-    plugins: [
-        build.jigsaw,
-        build.browserSync(),
-        build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.scss', '!source/**/_tmp/*']),
-    ]
-});
+
 
 mix.js('source/_assets/js/main.js', 'js')
     .sass('source/_assets/sass/main.scss', 'css')
@@ -42,3 +57,4 @@ mix.js('source/_assets/js/main.js', 'js')
 // Only run PurgeCSS during production builds for faster development builds
 // and so you still have the full set of utilities available during
 // development.
+*/

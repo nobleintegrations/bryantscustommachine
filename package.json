@@ -1,37 +1,35 @@
 {
-    "private": true,
-    "scripts": {
-        "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "dev": "npm run local",
-        "watch": "npm run local -- --watch"
-    },
-    "devDependencies": {
-        "browser-sync": "^2.26.13",
-        "browser-sync-webpack-plugin": "^2.0.1",
-        "cross-env": "^3.2.3",
-        "extra-watch-webpack-plugin": "^1.0.3",
-        "fuse.js": "^3.6.1",
-        "hasbin": "^1.2.3",
-        "highlight.js": "^9.18.3",
-        "laravel-mix": "^5.0.7",
-        "laravel-mix-purgecss": "^3.0.0",
-        "node-cmd": "^3.0.0",
-        "sass": "^1.28.0",
-        "sass-loader": "^7.3.1",
-        "tailwindcss": "^1.9.6",
-        "vue": "^2.6.12",
-        "vue-template-compiler": "^2.6.12",
-        "yargs": "^15.4.1"
-    },
-    "name": "bryantscustommachine",
-    "version": "1.0.0",
-    "main": "webpack.mix.js",
-    "author": "",
-    "license": "ISC",
-    "description": "",
-    "dependencies": {
-        "vue-scrollactive": "^0.8.0"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch",
+    "staging": "NODE_ENV=staging mix",
+    "prod": "mix --production"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.10",
+    "laravel-mix-jigsaw": "^1.5.0",
+    "postcss": "^8.2.4",
+    "postcss-import": "^14.0.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "tailwindcss": "^2.0.2"
+  },
+  "name": "bryantscustommachine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nobleintegrations/bryantscustommachine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nobleintegrations/bryantscustommachine/issues"
+  },
+  "homepage": "https://github.com/nobleintegrations/bryantscustommachine#readme",
+  "dependencies": {
+    "vue-scrollactive": "^0.9.3"
+  }
 }
